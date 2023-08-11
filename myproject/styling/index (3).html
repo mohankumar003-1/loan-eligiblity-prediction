@@ -1,0 +1,90 @@
+<!--{% load static %}--> 
+<!--{% load crispy_forms_tags%}-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href='style.css'>
+    <title>The Loaner</title>
+    
+</head>
+<body>
+    <div class="hd">
+      <div class="logo"><img src="loan.jpg", width="50", height="50"></div>
+      <div class="txt"><h1>The Loaner</h1><p>Your Loan problems made simple</p></div>
+    </div>
+
+    <div class="container">
+        <div class="vertical"></div>
+    </div>
+    <form  method="post">
+        <!--{% csrf_token %}-->
+        
+        <div class="loan" >
+            <label class="text" for="LoanAmount" >Loan Amount :</label>
+             <input type="number" name="LoanAmount" class="holder" placeholder="Amount" id="amount"/><br><br>
+            <label class="text"  for="Loan_Amount_Term">Term :</label>
+            
+            <input type="number" name="Loan_Amount_Term" class="holder" placeholder="Duration" id="term"/><br><br>
+            <label class="text" for="Credit_History" >Credit History :</label>
+             <select id="credit"  class="holder" name="Credit_History">
+                <option value="0">0</option>
+                <option value="1">1</option>   
+              </select><br><br>
+            <label class="text" for="Property_Area">Property Area :</label>
+             <select id="Property_Area"  class="holder" name="Property_Area">
+                <option value="2">URBAN</option>
+                <option value="1">SEMI-URBAN</option>
+                <option value="0">RURAL</option>      
+              </select><br><br>
+            <label class="text" for="ApplicantIncome" >Annual Income :</label>
+             <input type="number" name="ApplicantIncome" class="holder" id="Annual_Income"/><br><br>
+            <label class="text" for="CoapplicantIncome">Co-Aplicant Income :</label>
+             <input type="number" name="CoapplicantIncome" class="holder" id="Coapplicant_Income"/><br><br>
+        </div>
+        <div class="loanright">
+            <label class="text"  for="Dependents">Dependents:</label>
+             <select id="Dependents"  class="holder" name="Dependents">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>   
+                <option value="3">3+</option>         
+              </select><br><br>
+            <label class="text" for="Education">Education :</label>
+             <select id="Education"  class="holder" name="Education">
+                <option value="0">Not Graduate</option>
+                <option value="1">Graduate</option>      
+              </select><br><br>
+            <label class="text" for="Gender">Gender:</label>
+             <select id="Gender"  class="holder" name="Gender">
+                <option value="1">Male</option>
+                <option value="0">Female</option>      
+              </select><br><br>
+            <label class="text" for="Married">Marital Status :</label>
+             <select id="Married"  class="holder" name="Married">
+                <option value="0">NO</option>
+                <option value="1">YES</option>      
+              </select><br><br>
+            <label class="text" for="Self_Employed">Self Empolyed :</label>
+             <select id="Self_Employed"  class="holder" name="Self_Employed">
+                <option value="0">NO</option>
+                <option value="1">YES</option>      
+              </select><br><br>
+
+
+        <div class="button-borders">
+          <button class="primary-button"> BUTTON </button>
+        </div>
+        
+            <!--{% block content %}
+            {% endblock %}-->
+            
+        </div>
+
+    </form>
+    
+</body>
+</html>

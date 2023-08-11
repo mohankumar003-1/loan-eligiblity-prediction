@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+{% if a == 1 %}
+<div class="positive" style="background-color: green; width: 100px; border-radius: 24px; padding: 12px; color: white; text-align: center;">
+    LOAN APPROVED
+</div>
+{% elif a == 0 %}
+<div class="negative" style="background-color: red; width: 100px; border-radius: 24px; padding: 12px; color: white">
+    LOAN NOT APPROVED
+</div>
+{% endif %} 
+
+
+
+{% endblock %}

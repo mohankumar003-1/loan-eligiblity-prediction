@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    margin-top: 80px;
+    margin-right: 200px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7b5b5;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+
+  /*.vertical {
+    border-left: 2px solid white;
+    height: 600px;
+    top:100px;
+    bottom: 100px;
+    position:absolute;
+    left: 50%;
+}*/
+  
+  /* Header styles */
+  .hd {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    margin-left: 20px ;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .txt {
+    margin-left: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgb(140, 138, 138);
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 10px auto;
+    background-color:#956e6e;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);   
+    transition: .3s;
+      
+  }
+  
+  .text {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a0a0a;
+    margin-bottom: 8px;
+  }
+
+  .holder {
+    font-family:  'Poppins', sans-serif; 
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgb(128, 171, 240);   
+    transition: .3s;
+  }
+  
+  input[type="number"]{
+    width: 20;
+    height:30px;
+}
+  .loan{
+    position: relative;
+    top:150px;
+    
+    margin-left: 170px;
+    margin-top: 100px;
+}
+.loanright{
+    position: relative;
+    margin-left: 500px;
+    margin-top: -500px;
+}
+
+  
+  
+  .primary-button {
+    background-color: #428bca;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:  'Poppins', sans-serif; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-button:hover {
+    background-color: #3071a9;
+  }
+  
+  .button-borders {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+
+  
